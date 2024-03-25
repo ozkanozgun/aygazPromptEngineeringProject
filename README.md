@@ -21,4 +21,4 @@ This project is an HTML, CSS, and JavaScript implementation of a futuristic-them
 4.  Customize styles in `style.css` as needed
 
 
-This project is designed by Ozgun Ozkan with the help of Google Gemini Advance AI tool.
+This project is designed by Ozgun Ozkan with the help of Microsoft Copilot for the visuals and Google Gemini Advance for the codes.
