@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200'); /* Import the font */
+
+body {
+    font-family: 'Source Code Pro', monospace; 
+    margin: 0; 
+    background-color: #111; /* Very dark background for futuristic feel */
+    background-image: url('images/neoncity.svg');
+    background-size: cover; /* Make the image cover the background area */
+    background-position: center;
+    color: #2c2828; /* Light, near-white text */
+    overflow: hidden;
+
+    /* Animation Properties */
+    animation-name: slidein; 
+    animation-duration: 40s; /* Adjust speed as desired */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;        
+
+    /* Vendor Prefixes for Compatibility */  
+    -webkit-animation-name: slidein; 
+    -webkit-animation-duration: 40s; 
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-direction: alternate;                   
+}
+
+@keyframes slidein {
+  from {background-position: top; background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;} 
+}
+
+/* ... your navbar, footer, and other styles ... */ 
+
+
+.navbar {
+    background: linear-gradient(45deg, #ef74c0, #c14646, #6590e6); /* Neon gradient */
+    background-size: 400% 400%; /* Large background size for animation */
+    -webkit-animation: gradientAnimation 10s ease infinite; /* Animation */
+    -moz-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    padding: 10px;
+    position: fixed; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 90%;
+    border-radius: 10%;
+    
+}
+
+@keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block; /* Allow links to sit side-by-side */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: #ccc; 
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #673e57; /* Neon pink hover color */
+}
+
+footer {
+    background-color: #222;  
+    text-align: center;
+    padding: 10px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+}
+
+.social-icons a {
+    color: #666; 
+    font-size: 2em;
+    margin: 0 10px;
+    transition: color 0.3s; 
+}
+
+.social-icons a:hover {
+    color: #99ffcc; /* Futuristic hover color */
+}
+
+/* Responsive design - adjust as needed */
+@media (max-width: 600px) { 
+    .navbar li {
+        display: block; 
+    }
+} 
